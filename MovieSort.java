@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.regex.MatchResult;
@@ -38,7 +36,7 @@ public class MovieSort {
         ArrayList<Movie> movies = new ArrayList<>();
         Scanner s = new Scanner(System.in);
         
-        while (true){
+        while(true){
             // User provides title
             String title = "";
             int year = 0;
@@ -72,9 +70,8 @@ public class MovieSort {
 
             Movie movie = new Movie(title, year); // Creates new movie from user input and adds it to the list
             movies.add(movie);
-            for (Movie m : movies){
+            for(Movie m : movies){
                 System.out.println(m);
-                
             }
 
             s.nextLine(); // Consumes leftover newline from previous input
@@ -112,7 +109,7 @@ public class MovieSort {
         if(end - start < 2){
             return movies;
         }
-        int mid = start+(end - start)/2;
+        int mid = start + (end - start)/2;
         sortYear(movies, start, mid);
         sortYear(movies, mid, end);
 
