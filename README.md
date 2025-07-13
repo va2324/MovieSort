@@ -11,6 +11,11 @@ Clone the project:
 git clone https://github.com/va2324/MovieSort.git
 ```
 
+Make sure you have Java installed on your system. Enter the command below to check if Java is already installed. If not, download Java from this website: https://www.oracle.com/java/technologies/downloads/
+```
+java -version
+```
+
 Run the following commands in the terminal to start the application:
 ```
 javac MovieSort.java
